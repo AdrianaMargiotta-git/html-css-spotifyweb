@@ -1,0 +1,51 @@
+/*general rules*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  min-height: calc(1vh - 100px);
+}
+
+/*div{
+  min-height: 100px;
+}*/
+
+.navbar-sx{
+  background-color: red;
+  flex-basis: 25%; /*larghezza*/
+  min-height: calc(100vh - 100px);
+  flex-shrink: 0.40;
+}
+
+.centrale{
+  background-color: yellow;
+  flex-basis: 75%; /*larghezza*/
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 100px);
+  flex-shrink: 1;
+  /*position: fixed;*/
+}
+
+.upgrade{
+  background-color: blue;
+  flex-basis: 100px; /*altezza*/
+}
+
+.music{
+  background-color: green;
+  flex-basis: 100px; /*altezza*/
+}
+
+.finale{
+  background-color: violet;
+  flex-basis: 100%;
+  min-height: 100px;
+  /*position: fixed;*/
+}
