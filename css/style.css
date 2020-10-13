@@ -56,10 +56,6 @@ a:hover{
   height: 25px;
 }
 
-#playlist-plus{
-
-}
-
 /*.fa-plus-square {
   background-color: black; /*non funziona*/
   /*color: lightgrey; /*backgroundcolor*/
@@ -77,9 +73,11 @@ strong{
   padding: 1px 2px;
 }
 
-.playlist-name{
+/*??????*/
+/*.playlist-name{
   overflow-y: scroll;
-}
+}*/
+
 
 
   /*centrale rules*/
@@ -93,6 +91,7 @@ strong{
   /*position: fixed;*/
 }
 
+    /*upgrade rules*/
 .upgrade{
   background-color: blue; /*#080b12*/
   flex-basis: 80px; /*altezza*/
@@ -109,11 +108,41 @@ strong{
   background-color: #080b12;
 }
 
+    /*music rules*/
 .music{
   background-color: green;
   flex-basis: calc(100vh - 180px); /*altezza*/
   overflow-y: scroll;
 }
+
+.menu-alto{
+  display: flex;
+  margin: 10px 0px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.playlist-recenti{
+  display: flex;
+  margin: 6px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.img-playlist{
+  max-height: 140px;
+  max-width: 140px;
+}
+
+figcaption{
+  text-align: center;
+}
+
+.small-h3{
+  font-size: 15px;
+}
+
+
 
 
 .contenitore-finale{
