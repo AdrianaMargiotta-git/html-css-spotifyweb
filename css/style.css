@@ -5,24 +5,84 @@
   box-sizing: border-box;
 }
 
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: #7d7f84;
+}
+
+a:hover{
+  text-decoration: underline green;
+}
 
 .container-flex{
   display: flex;
   flex-direction: row;
   min-height: calc(1vh - 100px);
+  overflow: hidden;
 }
 
 /*div{
   min-height: 100px;
 }*/
 
+  /*navbar-sx rules*/
 .navbar-sx{
-  background-color: red;
+  background-color: red; /*#000000*/
   flex-basis: 25%; /*larghezza*/
   min-height: calc(100vh - 100px);
   flex-shrink: 0.40;
+  /*position: fixed;*/
+  /*flex-wrap: wrap;*/
+  padding: 6px 4px;
 }
 
+.navbar-mobile{
+  display: none;
+}
+
+#logo-spotify{
+  max-width: 100%;
+  height: 60px;
+  margin: 6px 4px;
+}
+
+.img-navbar{
+  max-width: 25px;
+  height: 25px;
+}
+
+#playlist-plus{
+
+}
+
+/*.fa-plus-square {
+  background-color: black; /*non funziona*/
+  /*color: lightgrey; /*backgroundcolor*/
+  /*line-height: 0 !important;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-right: 4px;
+}*/
+
+strong{
+  border: 1px solid lightgrey;
+  background-color: lightgrey;
+  color: black;
+  font-size: 30px;
+  padding: 1px 2px;
+}
+
+.playlist-name{
+  overflow-y: scroll;
+}
+
+
+  /*centrale rules*/
 .centrale{
   background-color: yellow;
   flex-basis: 75%; /*larghezza*/
@@ -34,13 +94,30 @@
 }
 
 .upgrade{
-  background-color: blue;
-  flex-basis: 100px; /*altezza*/
+  background-color: blue; /*#080b12*/
+  flex-basis: 80px; /*altezza*/
+  /*position: fixed;*/
+}
+
+#button-upgrade{
+  float: right;
+  margin: 12px;
+  padding: 14px;
+  border-radius: 20px;
+  color: white;
+  border: 1px solid white;
+  background-color: #080b12;
 }
 
 .music{
   background-color: green;
-  flex-basis: 100px; /*altezza*/
+  flex-basis: calc(100vh - 180px); /*altezza*/
+  overflow-y: scroll;
+}
+
+
+.contenitore-finale{
+
 }
 
 .finale{
