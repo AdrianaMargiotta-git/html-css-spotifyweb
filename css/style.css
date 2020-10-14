@@ -22,7 +22,7 @@ a:hover{
 .container-flex{
   display: flex;
   flex-direction: row;
-  min-height: calc(1vh - 100px);
+  min-height: calc(100vh - 100px);
   overflow: hidden;
 }
 
@@ -44,7 +44,8 @@ a:hover{
 .navbar-normal{
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
+  min-height: calc(100vh - 100px);
 }
 
 .nav-inalto{
@@ -57,6 +58,8 @@ a:hover{
   /*justify-content: flex-end;*/
   /*align-items: flex-end;*/
   /*align-content: flex-end;*/
+  margin-top: 10px;
+  /*align-self: flex-end;*/
 }
 
 .img-navbar-circle{
@@ -121,24 +124,25 @@ strong{
     /*upgrade rules*/
 .upgrade{
   background-color: blue; /*#080b12*/
-  flex-basis: 80px; /*altezza*/
+  flex-basis: 84px; /*altezza*/
   /*position: fixed;*/
 }
 
 #button-upgrade{
   float: right;
-  margin: 12px;
+  margin: 16px;
   padding: 14px;
   border-radius: 20px;
   color: white;
   border: 1px solid white;
   background-color: #080b12;
+  text-align: center;
 }
 
     /*music rules*/
 .music{
   background-color: green;
-  flex-basis: calc(100vh - 180px); /*altezza*/
+  flex-basis: calc(100vh - 178px); /*altezza*/
   overflow-y: scroll;
 }
 
@@ -255,8 +259,80 @@ figcaption{
 }
 
 .finale{
-  background-color: violet;
+  background-color: blue;
   flex-basis: 100%;
   min-height: 100px;
   /*position: fixed;*/
+  /*align-self: flex-end;*/
+  /*position: absolute;*/
+  /*justify-content: space-between;
+  align-items: center;*/
+  display: flex;
+  flex-direction: row;
+  /*min-height: calc(100vh - 100px);*/
+  overflow: hidden;
+  flex-shrink: 1;
+}
+
+.finale-canzone{
+  background-color: pink;
+  flex-basis: 20%;
+  min-height: 100px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0.40;
+}
+
+#finale-img-canzone{
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.finale-score{
+  background-color: red;
+  flex-basis: 60%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0.40;
+}
+
+.fa-share-alt, .fa-step-backward, .fa-play-circle, .fa-step-forward, .fa-redo-alt{
+  margin: 4px;
+  color: white;
+}
+
+.finale-avanzamento{
+  /*display: flex;*/
+}
+
+#final-score{
+  display: inline-block;
+  min-height: 8px;
+  min-width: 240px;
+  /*flex-basis: 1000%;*/
+  border: 2px solid none;
+  border-radius: 2px;
+  /*background-color: #5a5a5a;*/
+  background: linear-gradient(to right, white, #5a5a5a);
+}
+
+.finale-vol{
+  background-color: lightblue;
+  flex-basis: 20%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 0.40;
+}
+
+.fa-bars, .fa-tv, .fa-volume-up{
+  margin: 4px;
+  color: white;
 }
