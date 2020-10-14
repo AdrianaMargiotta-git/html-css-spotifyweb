@@ -17,26 +17,36 @@
       <div class="navbar-sx">
 
         <div class="navbar-normal">
-          <img src="img/logo.svg" alt="logo spotify" id="logo-spotify">
-          <br>
-          <a href="#"><img src="img/home.svg" alt="home" class="img-navbar">HOME</a>
-          <br>
-          <a href="#"><img src="img/search.svg" alt="search" class="img-navbar">Cerca</a>
-          <br>
-          <a href="#"><img src="img/libreria.svg" alt="libreria" class="img-navbar">La tua libreria</a>
-          <br><br>
-          <h2>PLAYLIST</h2>
-          <!--<strong id="playlist-plus"><i class="fas fa-plus-square"></i>Crea Playlist</strong>-->
-          <a href="#"><strong>+</strong> Crea Playlist</a>
-          <div class="playlist-name">
-            <a href="#">Nome Playlist</a> <br>
-            <a href="#">Nome Playlist</a> <br>
-            <a href="#">Nome Playlist</a> <br>
-            <a href="#">Nome Playlist</a> <br>
-            <a href="#">Nome Playlist</a> <br>
-            <a href="#">Nome Playlist</a> <br>
-            <a href="#">Nome Playlist</a>
+
+          <div class="nav-inalto">
+            <img src="img/logo.svg" alt="logo spotify" id="logo-spotify">
+            <br>
+            <a href="#"><img src="img/home.svg" alt="home" class="img-navbar">HOME</a>
+            <br>
+            <a href="#"><img src="img/search.svg" alt="search" class="img-navbar">Cerca</a>
+            <br>
+            <a href="#"><img src="img/libreria.svg" alt="libreria" class="img-navbar">La tua libreria</a>
+            <br><br>
+            <h2>PLAYLIST</h2>
+            <!--<strong id="playlist-plus"><i class="fas fa-plus-square"></i>Crea Playlist</strong>-->
+            <a href="#"><strong>+</strong> Crea Playlist</a>
+            <div class="playlist-name">
+              <a href="#">Nome Playlist</a> <br>
+              <a href="#">Nome Playlist</a> <br>
+              <a href="#">Nome Playlist</a> <br>
+              <a href="#">Nome Playlist</a> <br>
+              <a href="#">Nome Playlist</a> <br>
+              <a href="#">Nome Playlist</a> <br>
+              <a href="#">Nome Playlist</a>
+            </div>
           </div>
+
+          <div class="nav-inbasso">
+            <span><i class="fas fa-arrow-circle-down"></i> Installa app</span>
+            <hr>
+            <a href="#"><img src="img/profile.svg" alt="profile" class="img-navbar img-navbar-circle"> John Doe</a>
+          </div>
+
         </div>
 
         <div class="navbar-mobile">
@@ -49,7 +59,8 @@
 
         <!-- insert Effettua l'upgrade-->
         <div class="upgrade">
-          <button type="button" name="upgrade" id="button-upgrade">EFFETUA L'UPGRADE</button>
+          <button type="button" name="upgrade" id="button-upgrade">EFFETUA L'UPGRADE
+          </button>
         </div>
 
         <!-- insert menu plus music-->
@@ -64,65 +75,149 @@
             <a href="#">SCOPRI</a>
           </div>
 
+          <!--insert list recently-->
           <div class="brani-recenti">
             <h2>RECENTLY PLAYED</h2>
 
             <div class="playlist-recenti">
 
-              <!--<div class="brano">
-                <img src="img/metal_lifting.jpg" alt="metal">
-                <h3>Heavy Metal</h3>
-                <p>Subtitle</p>
-              </div>-->
-
+              <!--insert heavy metal-->
               <figure>
                 <img src="img/metal_lifting.jpg" alt="metal" class="img-playlist">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
                 <figcaption>
                   <h3>Heavy Metal</h3>
                   <p>Subtitle</p>
                 </figcaption>
               </figure>
 
+              <!--insert stranger-->
               <figure>
                 <img src="img/stranger.jpeg" alt="stranger" class="img-playlist">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
                 <figcaption>
                   <h3 class="small-h3">Stranger Things, Vol. <br>1 (a Netflix Original <br> Series Soundtrack)</h3>
                   <p>Kyle Dixon & Michael</p>
                 </figcaption>
               </figure>
 
+              <!--insert aquietplace-->
               <figure>
                 <img src="img/aquietplace.jpeg" alt="aquietplace" class="img-playlist">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
                 <figcaption>
                   <h3>A quite place</h3>
                   <p>Subtitle</p>
                 </figcaption>
               </figure>
 
+              <!--insert split-->
               <figure>
                 <img src="img/split.jpeg" alt="split" class="img-playlist">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
                 <figcaption>
                   <h3>Split</h3>
                   <p>Subtitle</p>
                 </figcaption>
               </figure>
 
+              <!--insert cure-->
               <figure>
                 <img src="img/cure.jpeg" alt="cure" class="img-playlist">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
                 <figcaption>
                   <h3>A cure of wellness</h3>
                   <p>Subtitle</p>
                 </figcaption>
               </figure>
 
+              <!--insert sinister-->
               <figure>
                 <img src="img/sinister.jpeg" alt="sinister" class="img-playlist">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
                 <figcaption>
                   <h3>Sinister</h3>
                   <p>Subtitle</p>
                 </figcaption>
               </figure>
 
+            </div>
+
+          </div>
+
+          <!--insert list created-->
+          <div class="brani-creati">
+            <h2>Creato da John Doe</h2>
+            <p>Piu ascolti, piu accurati saranno i suggerimenti</p>
+
+            <div class="playlist-creati">
+
+              <!--insert relase radar-->
+              <figure>
+                <img src="img/radar.jpeg" alt="radar" class="img-playlist img-playlist-padding">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+                <figcaption>
+                  <h3>Release Reader</h3>
+                </figcaption>
+              </figure>
+
+              <!--insert daily mix 1-->
+              <figure>
+                <img src="img/mixdaily.jpeg" alt="mixdaily" class="img-playlist">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+                <figcaption>
+                  <h3>Daily Mix 1</h3>
+                </figcaption>
+              </figure>
+
+            </div>
+
+          </div>
+
+          <!--insert artisti popolari-->
+          <div class="brani-popolari">
+            <h2>Artisti più popolari</h2>
+            <p>Piu ascolti, piu accurati saranno i suggerimenti</p>
+
+            <div class="playlist-popolari">
+
+              <!--insert relase radar-->
+              <figure>
+                <img src="img/youg.jpeg" alt="youg" class="img-playlist img-playlist-padding img-playlist-radius">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+                <figcaption>
+                  <h3>Release Reader</h3>
+                </figcaption>
+              </figure>
+
+              <!--insert relase radar-->
+              <figure>
+                <img src="img/einaudi.jpeg" alt="einaudi" class="img-playlist img-playlist-padding img-playlist-radius">
+                <div class="arrow-hover">
+                  <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+                <figcaption>
+                  <h3>Release Reader</h3>
+                </figcaption>
+              </figure>
 
             </div>
 
