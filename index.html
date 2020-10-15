@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>SpotyBool</title>
+    <title>SpotiBool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -28,7 +28,6 @@
             <a href="#"><img src="img/libreria.svg" alt="libreria" class="img-navbar">La tua libreria</a>
             <br><br>
             <h2>PLAYLIST</h2>
-            <!--<strong id="playlist-plus"><i class="fas fa-plus-square"></i>Crea Playlist</strong>-->
             <a href="#"><strong>+</strong> Crea Playlist</a>
             <div class="playlist-name">
               <a href="#">Nome Playlist</a> <br>
@@ -42,7 +41,7 @@
           </div>
 
           <div class="nav-inbasso">
-            <span><i class="fas fa-arrow-circle-down"></i> Installa app</span>
+            <span id="testo-navbarbasso"><i class="fas fa-arrow-circle-down"></i> Installa app</span>
             <hr>
             <a href="#"><img src="img/profile.svg" alt="profile" class="img-navbar img-navbar-circle"> John Doe</a>
           </div>
@@ -50,7 +49,20 @@
         </div>
 
         <div class="navbar-mobile">
-          DA COMPLETARE
+          <div class="nav-inalto-2">
+            <img src="img/logo-small.svg" alt="logo spotify" id="logo-spotify-2">
+            <br>
+            <a href="#"><img src="img/home.svg" alt="home" class="img-navbar-2"></a>
+            <br>
+            <a href="#"><img src="img/search.svg" alt="search" class="img-navbar-2"></a>
+            <br>
+            <a href="#"><img src="img/libreria.svg" alt="libreria" class="img-navbar-2"></a>
+          </div>
+
+          <div class="nav-inbasso-2">
+            <span id="testo-navbarbasso2"><i class="fas fa-arrow-circle-down"></i></span> <br>
+            <a href="#"><img src="img/profile.svg" alt="profile" class="img-navbar-2 img-navbar-circle-2"></a>
+          </div>
         </div>
 
       </div>
@@ -236,18 +248,17 @@
 
         <div class="finale-canzone">
           <img src="img/youg.jpeg" alt="youg" id="finale-img-canzone">
-          <!--<h3>Lana del Ray <br> Brano nome</h3>-->
           <div class="finale-testo">
             <h4>Lana del Ray</h4>
             <h6>Brano nome</h6>
           </div>
 
-          <a href="#"><i class="far fa-heart"></i></a><a href="#"><i class="far fa-folder"></i></a>
-        </div>
+          <div id="finale-icone">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
+          </div>
 
-        <!--<div class="finale-icone">
-          <a href="#"><i class="far fa-heart"></i></a><a href="#"><i class="far fa-folder"></i></a>
-        </div>-->
+        </div>
 
         <div class="finale-score">
 
@@ -268,7 +279,7 @@
             <div class="">
               4:35
             </div>
-            <!--0:25 <hr id="final-score"> 4:35-->
+
           </div>
 
         </div>

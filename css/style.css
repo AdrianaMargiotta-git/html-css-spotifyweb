@@ -24,11 +24,12 @@ a:hover{
   flex-direction: row;
   min-height: calc(100vh - 100px);
   overflow: hidden;
+  flex-grow: 1;
 }
 
   /*navbar-sx rules*/
 .navbar-sx{
-  background-color: red; /*#000000*/
+  background-color: #000000; /*#000000*/
   flex-basis: 25%; /*larghezza*/
   min-height: calc(100vh - 100px);
   flex-shrink: 0.40;
@@ -42,12 +43,12 @@ a:hover{
   min-height: calc(100vh - 100px);
 }
 
-.nav-inalto{
-
-}
-
 .nav-inbasso{
   margin-top: 10px;
+}
+
+#testo-navbarbasso{
+  color: #717171;
 }
 
 .img-navbar-circle{
@@ -82,16 +83,46 @@ strong{
   padding: 1px 2px;
 }
 
-/*??????*/
-/*.playlist-name{
-  overflow-y: scroll;
-}*/
+/*rules navbar mobile*/
+.navbar-mobile{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 100px);
+}
 
+.nav-inbasso-2{
+  margin-top: 10px;
+}
 
+.img-navbar-circle-2{
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.nav-inbasso-2 a{
+  color: white;
+}
+
+#logo-spotify-2{
+  max-width: 90%;
+  height: 50px;
+  margin: 6px 4px;
+}
+
+.img-navbar-2{
+  max-width: 25px;
+  height: 25px;
+}
+
+#testo-navbarbasso2{
+  color: #717171;
+}
+/*FINE rules navbar mobile*/
 
   /*centrale rules*/
 .centrale{
-  background-color: yellow;
+  background-color: #141922;
   flex-basis: 75%; /*larghezza*/
   display: flex;
   flex-direction: column;
@@ -121,7 +152,7 @@ strong{
 
     /*music rules*/
 .music{
-  background-color: green;
+  background-color: #141922;
   flex-basis: calc(100vh - 100px); /*altezza*/
   overflow-y: scroll;
   padding-top: 90px;
@@ -133,6 +164,7 @@ strong{
 .music h2, h3{
   color: white;
 }
+
 .music p{
   color: #7d7f84;
 }
@@ -237,14 +269,14 @@ figcaption{
 
  /*rules contenitore finale*/
 .finale{
-  background-color: blue;
+  background-color: #282828;
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .finale-canzone{
-  background-color: pink;
+  /*background-color: pink;*/
   display: flex;
   align-items: center;
 }
@@ -265,13 +297,13 @@ figcaption{
 }
 
 .finale-score{
-  background-color: red;
+  /*background-color: red;*/
   flex-basis: 600px;
   text-align: center;
 }
 
 .finale-comand{
-  display: flex;
+  /*display: flex;*/
   align-items: center;
 }
 
@@ -286,7 +318,7 @@ figcaption{
 }
 
 .finale-vol{
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   display: flex;
   align-items: center;
 }
@@ -300,7 +332,30 @@ figcaption{
   position: relative;
   height: 3px;
   flex-grow: 1;
-  background: linear-gradient(to right, white, #5a5a5a);
+  background-color: #5a5a5a;
+}
+
+.linea:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  background-color: white;
+}
+
+.finale-avanzamento:hover .linea:before,
+.finale-vol:hover .linea:before {
+  content: '';
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .linea-riga{
@@ -309,3 +364,19 @@ figcaption{
 
 
 /*MEDIA QUERY*/
+@media all and (max-width:420px) {
+
+  .navbar-normal{
+    display: none;
+  }
+
+  .navbar-mobile{
+    display: flex;
+  }
+
+  .finale-vol{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
